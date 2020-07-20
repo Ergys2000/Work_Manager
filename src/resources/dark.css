@@ -1,0 +1,170 @@
+
+.root{
+    -fx-root: #363333; /* This is the color of the whole background*/
+    -fx-primary: #272121; /* this is the primary color of the tabs*/
+    -fx-secondary: #e16428; /* this is the secondary color of the tabs and primary color of buttons*/
+    -fx-outsideText: #f6e9e9; /* this is the text color of the labels just on top of the root color*/
+    -fx-insideText: #f6e9e9;/* this is the text color of the labels on top of the tabs and buttons*/
+
+    -fx-background-color: -fx-root;
+}
+.label{
+    -fx-text-fill: -fx-outsideText;
+}
+/*--- Setting button styles ----------------------------------------------------*/
+.button-flat{
+    -fx-padding: 1em 1.3em;
+    -fx-font-size: 14px;
+    -jfx-button-type: FLAT;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-insideText;
+}
+.button-flat:hover{
+    -fx-background-color: derive(-fx-secondary, 10%);
+}
+.acc-button{
+    -fx-background-color: derive(-fx-primary, 20%);
+    -jfx-button-type: FLAT;
+    -fx-text-fill: -fx-insideText;
+}
+
+/*--- Setting the style of the textfields and combo boxes -----------------------------------*/
+.jfx-text-field, .jfx-password-field{
+    -jfx-focus-color: derive(-fx-secondary, 1%);
+    -fx-text-fill: -fx-outsideText;
+}
+.jfx-combo-box{
+    -fx-background-color: -fx-root;
+    -fx-text-fill: -fx-outsideText;
+    -jfx-focus-color: -fx-secondary;
+}
+.jfx-combo-box .list-cell{
+    -fx-background-color: -fx-root;
+    -fx-text-fill: -fx-outsideText;
+}
+.jfx-combo-box .list-cell:hover{
+    -fx-background-color: -fx-secondary;
+}
+.jfx-date-picker, .jfx-time-picker{
+    -jfx-default-color: -fx-secondary;
+}
+.jfx-date-picker .label, .jfx-time-picker .label{
+    -fx-text-fill: -fx-outsideText;
+}
+.date-picker-popup {
+    -fx-background-color: -fx-root;
+}
+.date-picker-popup .date-cell{
+    -fx-text-fill: -fx-outsideText;
+}
+.date-picker-popup .date-cell:hover{
+    -fx-text-fill: -fx-insideText;
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 20px;
+}
+.jfx-date-picker .button{
+    -fx-background-color: derive(-fx-secondary, 50%);
+    -fx-background-radius: 20px;
+    -fx-fill: white;
+}
+/*--- Setting the style of the vertical menu ------------------------------------------*/
+.vertical-menu{
+    -fx-background-color: derive(-fx-primary, -50%);
+}
+.vertical-menu-btn{
+    -fx-text-fill: -fx-insideText;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-background-color: derive(-fx-primary, -50%);
+    -fx-pref-height: 50;
+}
+.vertical-menu-btn:focused{
+    -fx-background-color: -fx-secondary;
+}
+
+
+
+
+/*--- Setting the style of the tables -----------------------------------------------------------*/
+.customTable{
+    -fx-background-color: -fx-root;
+}
+.customTable .header{
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: -fx-outsideText;
+    -fx-padding: 10 16 10 16;
+    -fx-text-fill: -fx-outsideText;
+}
+.customTable-cell{
+    -fx-alignment: CENTER;
+}
+
+
+
+
+/*--- Setting the style of the tabpane and the tabs------------------------------------------------------*/
+.tab *.tab-label {
+    -fx-rotate: 0;
+}
+
+.tab {
+    -fx-text-fill: -fx-insideText;
+    -fx-background-color: -fx-primary;
+    -fx-pref-width: 200;
+    -fx-pref-height: 70;
+}
+.jfx-tab-pane .tab:selected{
+    -fx-background-color: derive(-fx-secondary, 20%);
+}
+.jfx-tab-pane .tab-selected-line{
+    -fx-background-color: derive(-fx-secondary, -50%);
+}
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+
+
+
+
+/*--- Styling the scroll bar ---------------------------------------------------*/
+.scroll-pane {
+    -fx-background-color: -fx-root;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb, .scroll-pane > .corner {
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 5em;
+}
+/*--------------- Setting the style of the charts ------------------------*/
+.chart-bar{
+    -fx-background-color: -fx-secondary;
+    -fx-border-color: -fx-primary;
+    -fx-background-radius: 0;
+}
+.axis {
+    -fx-font-size: 1.4em;
+    -fx-tick-label-fill: -fx-outsideText;
+    -fx-font-family: Tahoma;
+    -fx-tick-length: 20;
+    -fx-minor-tick-length: 10;
+}
+.axis-label {
+    -fx-text-fill: -fx-outsideText;
+}
